@@ -74,7 +74,7 @@ row.names(df_rankings) <- ep_names
     df_rankings
     
 #lab step #16: access the third row of all_rankings
-    all_rankings[2,]
+    all_rankings[3,]
 
 #lab step #17: access the fourth column of df_rankings
     df_rankings[,4]
