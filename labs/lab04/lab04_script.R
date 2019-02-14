@@ -25,7 +25,7 @@ for (i in seq(1,8)) {
 k <- 2000
 rate <- 0.05
 
-#for loop: replace k with the current population value per year for the next seven years, print values to console
+#for loop: replace "k" with the current population value per year for the next seven years, print values to console
 for (i in seq(1,7)) {
     k <- (k - (k * rate))
     print(k)
