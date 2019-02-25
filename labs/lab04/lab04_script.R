@@ -32,19 +32,20 @@ for (i in seq(1,7)) {
 }
 
 #step 4
-#write a for loop for discrete-time logistic growth given the intrinsic growth rate (r), carrying capacity (K), population at time t (n[t])
-#create variables for K, r and the initial time of t
+#write a for loop for discrete-time logistic growth given the intrinsic growth rate (r), carrying capacity (K), population at time "t" (n[t])
+#create a variable for carrying capacity called "K"
 K <- 10000
+#create a variable for the intrinsic growth rate called "r"
 r <- 0.8
+#create a variable for time called "t"
 t <- 1
-#create a vector for "n" repeating 12 times
+#create a vector for "n" repeating 2500 (the population at t = 1), 12 times
 n <- rep(2500,12)
-
-#predict the population abundance over the next twelve years, replace "n" with "n[t]" to loop equation twelve times
+#predict the population abundance over the next twelve years, create variable "n[t]" to loop equation twelve times and store the data of the population abundance at time "t"
 for (t in 2:12) {
    n[t] <- n [t-1] + (r * n [t-1] * (K - n [t-1])/K )
 }
-#print "n" to console
+#print "n" to console to examine the population abundance at time step 12
 print(n)
 
 #part 2
@@ -77,7 +78,7 @@ print(zeros)
 length(zeros)
 
 #step 5d
-#tell for loop to run across the length of the vector begin at index position 2 in the "zeros" vector. using the values stored in that vector, replace these values with 1 + 2 * the previous index position, denoted by [i-1].
+#tell for loop to run across the length of the vector beginning at index position 2 in the "zeros" vector. using the values stored in that vector, replace these values with 1 + 2 * the previous index position, denoted by [i-1].
 for (i in 2:length(zeros)) {
     zeros[i] <- 1 + (2 * zeros[i-1])
 }
