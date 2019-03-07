@@ -7,4 +7,5 @@ The purpose of this repository is to submit completed laboratory assignments to 
 * Markdown files
 
 _Caitlin Tiehen_
+
 _University of Colorado - Boulder_
