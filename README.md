@@ -6,6 +6,5 @@ The purpose of this repository is to submit completed laboratory assignments to 
 * Shell scripts
 * Markdown files
 
-_Caitlin Tiehen_
-
+_Caitlin Tiehen_  
 _University of Colorado - Boulder_
