@@ -8,4 +8,3 @@ The purpose of this repository is to submit completed laboratory assignments to 
 
 _Caitlin Tiehen_
 _University of Colorado - Boulder_
-
