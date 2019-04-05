@@ -11,15 +11,15 @@ camData <- read.csv("Cusack_et_al_random_versus_trail_camera_trap_data_Ruaha_201
 View(camData)
 #create a vector containing the first date in the DateTime column within camData
 oneDate <- camData$DateTime[1]
-#use strptime with the oneDate vector to test data, does not work - returns NA
+#parsing: use strptime with the oneDate vector to test data, does not work - returns NA
 strptime(oneDate, format = "%d-%m-%Y %H:%M")
-#replace "-" with "/" in the strptime function, this works for "oneDate"
+#parsing: replace "-" with "/" in the strptime function, this works for "oneDate"
 strptime(oneDate, format = "%d/%m/%Y %H:%M")
 #create a vector for the entire DateTime column in the data set
 DateTime <- camData$DateTime
-#try to use this new format across the entire DateTime vector
+#parsing: try to use this new format across the entire DateTime vector
 strptime(DateTime, format = "%d/%m/%Y %H:%M")
-#this code runs and gives me the format that I want for the years which were given a four-digit format, problem 2 fixes the dates given in the two-digit format 
+#this code above runs and gives me the format that I want for the years which were given a four-digit format, problem 2 fixes the dates given in the two-digit format 
     #assign this to a variable to continue working on this in problem 2
 newDates <- strptime(DateTime, format = "%d/%m/%Y %H:%M")
 
