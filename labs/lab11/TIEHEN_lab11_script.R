@@ -57,4 +57,7 @@ speciesData2 <- spFaBiWoodData[keepCol2,]
 ggplot(speciesData2, aes(Family, meanDiff)) + geom_boxplot() + facet_wrap(facets = ~Family, scale = "free")
 
 #lab 11 - step 8: create a plot similar to that in Sam's lab 11 assignment (plots are easier to compare the data)
-    #did not get to, pushing anyways, may update later
+    #first plot - boxplot with the highest average densities
+ggplot(speciesData, aes(Family, meanDiff)) + geom_boxplot() + coord_flip()
+    #second plot - boxplot with the lowest average densities
+ggplot(speciesData2, aes(Family, meanDiff)) + geom_boxplot() + coord_flip()
